@@ -15,7 +15,7 @@ char sl = '\n';
 
 for (ch = 0; ch <= 10; ch++)
 {
-putchar(ch);
+putchar(ch+'0');
 }
 
 putchar(sl);
