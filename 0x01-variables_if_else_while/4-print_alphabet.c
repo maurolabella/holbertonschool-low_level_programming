@@ -1,4 +1,4 @@
-include<stdio.h>
+#include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
 
@@ -10,17 +10,20 @@ int main(void)
 
 {
 
-char ch;
+int ch;
 char sl = '\n';
 
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-putchar(ch);
-}
-for (ch = 'A'; ch <= 'Z'; ch++)
+if (ch == 'q' || ch == 'e')
+{}
+else
 {
 putchar(ch);
 }
+
+}
+
 putchar(sl);
 
 return (0);
