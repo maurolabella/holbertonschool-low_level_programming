@@ -13,9 +13,9 @@ int main(void)
 int ch;
 char sl = '\n';
 
-for (ch = 0; ch <= 10; ch++)
+for (ch = 0; ch < 10; ch++)
 {
-putchar(ch+'0');
+putchar(ch + '0');
 }
 
 putchar(sl);
