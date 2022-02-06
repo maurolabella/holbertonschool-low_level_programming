@@ -2,20 +2,6 @@
 #include<time.h>
 #include<stdlib.h>
 
-int printLine(int i, int j, int k, int l)
-{
-putchar(i % 10 + '0');
-putchar(j % 10 + '0');
-putchar(' ');
-putchar(k % 10 + '0');
-putchar(l % 10 + '0');
-if (!(i == 9 && j == 8 && k == 9 && l == 9))
-{
-putchar(',');
-putchar(' ');
-}
-}
-
 /**
  * main - main
  * Return: algo
@@ -38,7 +24,16 @@ while (l < 10)
 {
 if ((i == k && l > j) || (k > i))
 {
-printLine(i, j, k, l);
+putchar(i % 10 + '0');
+putchar(j % 10 + '0');
+putchar(' ');
+putchar(k % 10 + '0');
+putchar(l % 10 + '0');
+if (!(i == 9 && j == 8 && k == 9 && l == 9))
+{
+putchar(',');
+putchar(' ');
+}
 }
 l++;
 }
