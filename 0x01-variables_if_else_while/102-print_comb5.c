@@ -14,6 +14,8 @@ int i = 0;
 int j = 0;
 int k = 0;
 int l = 0;
+int markForprint = 1;
+
 while (i < 10)
 {
 while (j < 10)
@@ -22,7 +24,11 @@ while (k < 10)
 {
 while (l < 10)
 {
-if (i == k && l > j)
+if ((i == k && l > j) || (k > i))
+{
+markForprint = 0;
+}
+if (markForprint == 0)
 {
 putchar(i % 10 + '0');
 putchar(j % 10 + '0');
@@ -30,21 +36,11 @@ putchar(' ');
 putchar(k % 10 + '0');
 putchar(l % 10 + '0');
 if (!(i == 9 && j == 8 && k == 9 && l == 9))
-{putchar(',');
-putchar(' ');
-}
-}
-if (k > i)
 {
-putchar(i % 10 + '0');
-putchar(j % 10 + '0');
-putchar(' ');
-putchar(k % 10 + '0');
-putchar(l % 10 + '0');
-if (!(i == 9 && j == 8 && k == 9 && l == 9))
-{putchar(',');
+putchar(',');
 putchar(' ');
 }
+markForprint = 1;
 }
 l++;
 }
