@@ -2,33 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 
-/**
- * main - main
- * Return: algo
- */
-int main(void)
-
-{
-
-int i = 0;
-int j = 0;
-int k = 0;
-int l = 0;
-int markForprint = 1;
-
-while (i < 10)
-{
-while (j < 10)
-{
-while (k < 10)
-{
-while (l < 10)
-{
-if ((i == k && l > j) || (k > i))
-{
-markForprint = 0;
-}
-if (markForprint == 0)
+int printLine(int i, int j, int k, int l)
 {
 putchar(i % 10 + '0');
 putchar(j % 10 + '0');
@@ -40,7 +14,31 @@ if (!(i == 9 && j == 8 && k == 9 && l == 9))
 putchar(',');
 putchar(' ');
 }
-markForprint = 1;
+}
+
+/**
+ * main - main
+ * Return: algo
+ */
+int main(void)
+{
+
+int i = 0;
+int j = 0;
+int k = 0;
+int l = 0;
+
+while (i < 10)
+{
+while (j < 10)
+{
+while (k < 10)
+{
+while (l < 10)
+{
+if ((i == k && l > j) || (k > i))
+{
+printLine(i, j, k, l);
 }
 l++;
 }
