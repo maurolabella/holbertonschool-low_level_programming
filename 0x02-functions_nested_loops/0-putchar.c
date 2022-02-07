@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h" 
+#include "main.h"
 
 /**
  * main - main
@@ -8,8 +8,9 @@
 int main(void)
 {
 char buf0[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+int i;
 
-for (size_t i = 0; i < 8; i++)
+for (i = 0; i < 8; i++)
 {
 _putchar(buf0[i]);
 }
