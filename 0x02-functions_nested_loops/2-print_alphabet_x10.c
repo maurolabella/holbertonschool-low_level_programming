@@ -1,31 +1,16 @@
-#include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 
 /**
- * print_alphabet - print_alphabet
+ * print_alphabet_x10 - print_alphabet
  * Return: algo
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-for (char a = 'a'; a <= 'z'; a++)
-{
-_putchar(a);
-}
-}
+int i;
 
-/**
- * main - main
- * Return: algo
- */
-int main(void)
+for (i = 0; i < 10; i++)
 {
-
-for (int i = 0; i < 10; i++)
-{
-
 print_alphabet();
-_putchar('\n');
-
 }
-return (0);
+return;
 }
