@@ -3,8 +3,8 @@
 
 /**
  * _isalpha : check for alpha characters
+ * @c > receives a characther to be controlled
  * Return : algo
- * @c : receives a character to be controlled
  */
 int _isalpha(int c)
 {
