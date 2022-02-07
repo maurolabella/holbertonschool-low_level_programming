@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-char mystr[60] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+char my[60] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-write(2, mystr, 60);
+write(2, my, 59);
 
 return (1);
 }
