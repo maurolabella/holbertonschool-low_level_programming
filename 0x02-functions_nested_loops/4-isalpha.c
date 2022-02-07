@@ -2,8 +2,8 @@
 #include<ctype.h>
 
 /**
- * _isalpha : check for alpha characters
- * @c > receives a characther to be controlled
+ * _isalpha - check for alpha characters
+ * @c : receives a characther to be controlled
  * Return : algo
  */
 int _isalpha(int c)
