@@ -1,50 +1,51 @@
-#include"main.h"
-#include<stdio.h>
-#include<stdlib.h>
-#include<ctype.h>
-#include<limits.h>
+#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- * times_table - print time table
-  * Return: void
-**/
+ * times_table - function to print 9 times table
+ * Return: void
+ *
+ * Description:
+ * Author: Alex Senges
+ * Date: Feb 7, 2022
+ */
+
 void times_table(void)
 {
-int i;
-int j;
-int r;
 
-for (i = 0; i < 10; i++)
+int i, j, k;
+
+i = 0;
+while (i < 10)
 {
 j = 0;
-
-for (j = 0; j < 10; j++)
+while (j < 10)
 {
-r = i * j;
+k = i *j;
 
-if ((r / 10) == 0)
+if ((k / 10) + '0' != '0')
 {
-_putchar(' ');
+_putchar((k / 10) + '0');
 }
 else
 {
-_putchar((r / 10) + '0');
+if (j != 0)
+{
+_putchar(' ');
 }
-
-_putchar((r % 10) + '0');
+}
+_putchar((k % 10) + '0');
 
 if (j != 9)
 {
 _putchar(',');
 _putchar(' ');
-
 }
-else
-{
-_putchar('\n');
-}
-}
+j++;
 }
 _putchar('\n');
+i++;
 
+}
 }
