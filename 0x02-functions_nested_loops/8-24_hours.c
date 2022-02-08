@@ -4,6 +4,10 @@
 #include<ctype.h>
 #include<limits.h>
 
+/**
+ * jack_bauer - print time evolution
+  * Return: void
+**/
 void jack_bauer(void)
 {
 int i, j;
