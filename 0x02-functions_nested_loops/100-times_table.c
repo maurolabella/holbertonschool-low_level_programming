@@ -21,7 +21,7 @@ else
 {
 _putchar(c + '0');
 }
-if (d == 0)
+if (d == 0 && c == 0)
 {
 _putchar(' ');
 }
