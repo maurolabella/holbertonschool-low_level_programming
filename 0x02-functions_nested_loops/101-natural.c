@@ -1,0 +1,18 @@
+#include<stdio.h>
+/**
+ * main - function to sum multiples of 3 and 5
+ * Return: 0
+ * no parameter included
+ */
+int main(void)
+{
+int i;
+int sum = 0;
+for (i = 0; i < 1024; i++)
+{
+if ((i % 3 == 0) || (i % 5 == 0))
+sum = sum + i;
+}
+printf("sum is %d\n", sum);
+return (0);
+}
