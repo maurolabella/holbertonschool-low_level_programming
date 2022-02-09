@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-unsigned long n1 = 1, n2 = 2, n3, number = 50;
-int i;
+unsigned long n1 = 1, n2 = 2, n3;
+int i, number = 50;
 printf("\n%lu, %lu,", n1, n2);
 for (i = 3; i <= number; ++i)
 {
