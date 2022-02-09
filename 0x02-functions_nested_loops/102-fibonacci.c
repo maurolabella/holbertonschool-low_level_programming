@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-unsigned long long n1 = 1, n2 = 2, n3, number = 50;
+unsigned long n1 = 1, n2 = 2, n3, number = 50;
 int i;
-printf("\n%llu, %llu,", n1, n2);
+printf("\n%lu, %lu,", n1, n2);
 for (i = 3; i <= number; ++i)
 {
 n3 = n1 + n2;
 if (i == number)
 {
-printf(" %llu\n", n3);
+printf(" %lu\n", n3);
 }
 else
 {
-printf(" %llu,", n3);
+printf(" %lu,", n3);
 }
 n1 = n2;
 n2 = n3;
