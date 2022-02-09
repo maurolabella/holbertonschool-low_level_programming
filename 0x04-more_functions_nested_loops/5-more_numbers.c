@@ -14,6 +14,7 @@ for (i = 0; i < 15; i++)
 {
 int d;
 d = i / 10;
+
 if (!(d == 0))
 _putchar(d + '0');
 
