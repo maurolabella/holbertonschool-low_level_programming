@@ -5,7 +5,7 @@
 /**
  * sasa - calculates a power of ten
  * @n : receives an integer
- * Return: long
+ * Return: int
  */
 int sasa(int n)
 {
