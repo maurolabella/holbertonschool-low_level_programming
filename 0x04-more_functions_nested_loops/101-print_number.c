@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include"main.h"
-/**#include<math.h>*/
 
 /**
  * sasa - calculates a power of ten
