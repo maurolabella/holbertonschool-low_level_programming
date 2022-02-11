@@ -7,16 +7,16 @@
  * @n : receives an integer
  * Return: long
  */
-long int sasa(int n)
+int sasa(int n)
 {
-long int value = 1;
+	int value = 1;
 
-while (n != 0)
-{
-	value *= 10;
-	--n;
-}
-return (value);
+	while (n != 0)
+	{
+		value *= 10;
+		--n;
+	}
+	return (value);
 }
 
 /**
@@ -27,7 +27,7 @@ return (value);
 void print_number(int n)
 {
 	int q;
-	long int control, tmp;
+	int control, tmp;
 
 	if (n < 0)
 	{
