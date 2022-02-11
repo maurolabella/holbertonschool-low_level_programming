@@ -43,8 +43,7 @@ void print_number(long int n)
 		control = control / 10;
 		q++;
 	}
-	printf("%li\n", n);
-
+	
 	tmp = n;
 
 	while (q > 1)
