@@ -24,7 +24,7 @@ return (value);
  * @n : receives an integer
  * Return: void
  */
-void print_number(long int n)
+void print_number(int n)
 {
 	int q;
 	long int control, tmp;
