@@ -43,7 +43,6 @@ void print_number(long int n)
 		control = control / 10;
 		q++;
 	}
-	
 	tmp = n;
 
 	while (q > 1)
