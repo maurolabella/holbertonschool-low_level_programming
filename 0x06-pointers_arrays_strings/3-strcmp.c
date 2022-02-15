@@ -4,8 +4,8 @@
 
 /**
  * _strcmp - compares two strings
- * @s1 : first pointer to compare
- * @s2 : second pointer to compare
+ * @s1 : first string
+ * @s2 : second string
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 		mayor = j;
 	}
 	else
-	{
+		{
 		mayor = k;
 	}
 
@@ -31,10 +31,7 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 		{
-			if (s1[i] > s2[i])
-				control = 15;
-			else
-				control = -15;
+			control = s1[i] - s2[i];
 		}
 		if (control != 0)
 			break;
