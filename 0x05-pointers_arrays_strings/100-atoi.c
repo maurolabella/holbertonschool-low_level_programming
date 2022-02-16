@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	int i, flag, sign;
-	unsigned long nmbr;
+	int nmbr;
 
 	i = 0;
 	flag = 1;
