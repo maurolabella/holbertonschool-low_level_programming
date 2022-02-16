@@ -2,7 +2,7 @@
 
 /**
  * _atoi - search for numbers in a string in whimsical fashion
- *
+ * @s : receives string
  * Return: an integer.
  */
 int _atoi(char *s)
