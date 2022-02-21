@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 
 /**
  * _strspn - look for coincidences
@@ -14,7 +14,6 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s != '\0' && *s != 44 && *s != 20 && *s != 46)
 	{
-		printf(" s is %c\n", *s);
 		tmp = accept;
 		while (*tmp != '\0')
 		{
