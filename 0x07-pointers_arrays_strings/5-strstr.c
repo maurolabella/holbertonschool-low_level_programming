@@ -13,16 +13,20 @@ char *_strstr(char *haystack, char *needle)
 	int needle_length = 0;
 	int count = 0;
 
+	if (!haystack && !*haystack)
+		return (0);
+
+	if (!needle && !*needle)
+		return (haystack);
+
+	tmp = needle;
+
 	while (*tmp != '\0')
 	{
 		needle_length++;
 		tmp++;
 	}
 
-	if (needle_length == 0)
-		return (0);
-
-	tmp = needle;
 
 	while (*haystack != '\0')
 	{
