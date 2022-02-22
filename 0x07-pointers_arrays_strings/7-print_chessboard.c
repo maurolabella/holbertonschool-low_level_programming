@@ -3,7 +3,7 @@
 
 /**
  * print_chessboard - check the code
- * @a receives an two-dimension array
+ * @a : receives an two-dimension array
  * Return: nothing.
  */
 void print_chessboard(char (*a)[8])
@@ -15,7 +15,7 @@ void print_chessboard(char (*a)[8])
 	for (i = 0; i < dimension; i++)
 		for (j = 0; j < dimension; j++)
 		{
-			if (j == (dimension - 1))
+			if (!(j % (dimension - 1)) && j)
 			{
 				_putchar(a[i][j]);
 				_putchar('\n');
