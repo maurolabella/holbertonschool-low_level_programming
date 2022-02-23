@@ -18,14 +18,13 @@ int root1(int n, int i)
 	{
 		if (n - i * i > 0)
 		{
-			root1(n, i + 1);
+			return (root1(n, i + 1));
 		}
 		else
 		{
 			return (-1);
 		}
 	}
-	return (i);
 }
 
 
