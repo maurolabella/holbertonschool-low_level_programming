@@ -57,7 +57,8 @@ int is_prime_number(int n)
 {
 	int s;
 
-	(n < 0) ? (n = -n) : (n);
+	if (n < 0)
+		return (0);
 
 	s = root_aprox(n, 1);
 
