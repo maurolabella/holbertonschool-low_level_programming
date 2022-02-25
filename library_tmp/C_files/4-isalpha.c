@@ -1,0 +1,18 @@
+#include<ctype.h>
+
+/**
+ * _isalpha - check for alpha characters
+ * @c: receives a characther to be controlled
+ * Return: 0
+ **/
+int _isalpha(int c)
+{
+if (isalpha(c) == 0)
+{
+return (0);
+}
+else
+{
+return (1);
+}
+}
