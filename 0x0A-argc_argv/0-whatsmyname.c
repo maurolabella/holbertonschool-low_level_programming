@@ -5,7 +5,7 @@
 
 /**
  * main - do
- * @argc : integer 
+ * @argc : integer
  * @argv : array of pointer to arguments
  * Return: an integer.
  */
