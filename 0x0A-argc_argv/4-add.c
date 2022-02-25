@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		if (*argv[i] != '0' && atoi(argv[i]) == 0)
 		{
-			printf("Error");
+			printf("Error\n");
 			return (1);
 		}
 		i++;
