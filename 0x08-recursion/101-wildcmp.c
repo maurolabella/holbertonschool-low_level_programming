@@ -8,6 +8,7 @@
  * @s1 : string1
  * @s2 : string2
  * @type : char
+ * @mem : retains position when comparing wildcard
  * Return: an integer.
  */
 
