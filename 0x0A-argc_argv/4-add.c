@@ -17,16 +17,6 @@ int main(int argc, char *argv[])
 
 	i = 1;
 
-	while (argv[i])
-	{
-		if (*argv[i] != '0' && atoi(argv[i]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		i++;
-	}
-
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -34,6 +24,16 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		while (argv[i])
+		{
+			if (*argv[i] != '0' && atoi(argv[i]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			i++;
+		}
+
 		for (i = 1; i < argc; i++)
 		{
 			result = result + atoi(argv[i]);
