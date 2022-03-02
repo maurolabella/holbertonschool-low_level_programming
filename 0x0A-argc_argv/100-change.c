@@ -3,11 +3,13 @@
 #include <string.h>
 /**
  * main - receives amount of change to reduce
+ * @argc : numbers of parameters limited to 2
  * @argv : determinies the ammount to reduce
  */
 int main(int argc, char *argv[])
 {
 	int Numb, Coins;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
