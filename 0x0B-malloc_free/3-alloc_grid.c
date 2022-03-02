@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * intialize - initialize a pointer
+ * initialize - initialize a pointer
  * @array: pointer to a double array
  * @height: number of rows
  * @width: number of columns
