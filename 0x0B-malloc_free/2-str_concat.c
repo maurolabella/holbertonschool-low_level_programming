@@ -25,9 +25,12 @@ char *str_concat(char *s1, char *s2)
 	if ((i + j) > 0)
 		size = i + j;
 	else
-		return (NULL);
+	{
+		newstring = (char *)malloc(sizeof(char) * (size + 1));
+		newstring[0] = '\0';
+		return (newstring);
+	}
 	newstring = (char *)malloc(sizeof(char) * (size + 1));
-
 	if (newstring == NULL)
 		return (NULL);
 	if (i > 0)
