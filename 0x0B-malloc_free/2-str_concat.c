@@ -1,6 +1,7 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 
 /**
  *str_concat - creates an spaced string in heap
@@ -10,43 +11,31 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *newstring;
-	int size, i, j, k;
+	char *p = NULL;
+	int i, j = 0;
 
-	size = i = j = 0;
-	while (s1[i] != '\0')
+	if (s1 == NULL)
 	{
-		i++;
+		s1 = "";
 	}
-	while (s2[j] != '\0')
+	if (s2 == NULL)
 	{
-		j++;
+		s2 = "";
 	}
-	if ((i + j) > 0)
-		size = i + j;
-	else
+
+	p = malloc(strlen(s1) + strlen(s2) + 1);
+	if (p != NULL)
 	{
-		newstring = (char *)malloc(sizeof(char) * (size + 1));
-		newstring[0] = '\0';
-		return (newstring);
-	}
-	newstring = (char *)malloc(sizeof(char) * (size + 1));
-	if (newstring == NULL)
-		return (NULL);
-	if (i > 0)
-	{
-		for (k = 0; k < i; k++)
+		for (i = 0; s1[i]; i++)
 		{
-			newstring[k] = s1[k];
+			p[i] = s1[i];
+		}
+
+		for (j = 0; s2[j]; j++)
+		{
+			p[i] = s2[j];
+			i++;
 		}
 	}
-	if (j > 0)
-	{
-		for (k = i; k < (i + j); k++)
-		{
-			newstring[k] = s2[k - i];
-		}
-	}
-	newstring[i + j] = '\0';
-	return (newstring);
+	return (p);
 }
