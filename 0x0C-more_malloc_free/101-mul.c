@@ -48,6 +48,7 @@ void print_from_string(int *result, int n)
 	{
 		_putchar((result[n--] + 48));
 	}
+	_putchar('\n');
 }
 
 /**
