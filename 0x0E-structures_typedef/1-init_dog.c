@@ -2,6 +2,7 @@
 
 /**
  * init_dog - Short description
+ * @d: pointer received
  * @name: First member
  * @age: Second member
  * @owner: Third member
