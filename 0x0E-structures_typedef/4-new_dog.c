@@ -4,6 +4,7 @@
 
 /**
  * new_dog - Short description
+ * @d: pointer
  * @name: First member
  * @age: Second member
  * @owner: Third member
@@ -11,26 +12,27 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *new_name = strdup(name);
-	char *new_owner = strdup(owner);
-	dog_t *new_dog;
+	dog_t *new_perro;
 
-	if (new_name == NULL)
+	if (name == NULL)
 	{
-		free(new_owner);
-		return (NULL);
-	}
-	if (new_owner == NULL)
-	{
-		free(new_name);
+		free(owner);
 		return (NULL);
 	}
 
-	new_dog = malloc(sizeof(dog_t));
-	if (new_dog == NULL)
+	if (owner == NULL)
+	{
+		free(name);
 		return (NULL);
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
-	return (new_dog);
+	}
+
+	new_perro = malloc(sizeof(dog_t));
+	if (new_perro == NULL)
+		return (NULL);
+	new_perro->name = name;
+	new_perro->age = age;
+	new_perro->owner = owner;
+	free(name);
+	free(owner);
+	return (new_perro);
 }
