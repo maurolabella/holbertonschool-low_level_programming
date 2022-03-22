@@ -33,13 +33,5 @@ int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 
-#include "0-print_listint.c"
-#include "1-listint_len.c"
-#include "2-add_nodeint.c"
-#include "3-add_nodeint_end.c"
-#include "4-free_listint.c"
-#include "5-free_listint2.c"
-#include "6-pop_listint.c"
-#include "7-get_nodeint.c"
 
 #endif
