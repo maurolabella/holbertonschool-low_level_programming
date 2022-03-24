@@ -8,13 +8,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n;
+	unsigned int n = 0;
 	int i = 0;
 
 	while (b[i])
 	{
 		if (!(b[i] == 49 || b[i] == 48))
-			return (-1);
+			return (0);
 		n = n << 1;
 		n = n + b[i] - 48;
 		i++;
