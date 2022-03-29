@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 	sf = open(argv[1], O_RDONLY);
 	control_source(sf, argv[1], 98);
 
-	sd = open(argv[2], O_TRUNC | O_CREAT | O_WRONLY, 0644);
+	sd = open(argv[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
 	control_destiny(sd, argv[2], 99);
 
 	while (s == 1024)
