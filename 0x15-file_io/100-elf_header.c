@@ -16,7 +16,7 @@ int print_0S_ABI(uint8_t value)
 		printf("OS/ABI:\t\t\t\t   HP-UX\n");
 		break;
 	case 0x02:
-		printf("OS/ABI:\t\t\t\t   NET BSD\n");
+		printf("OS/ABI:\t\t\t\t   UNIX - NetBSD\n");
 		break;
 	case 0x03:
 		printf("OS/ABI:\t\t\t\t   Linux\n");
@@ -28,7 +28,7 @@ int print_0S_ABI(uint8_t value)
 		printf("OS/ABI:\t\t\t\t   GNU Hurd\n");
 		break;
 	case 0x06:
-		printf("OS/ABI:\t\t\t\t   Solaris\n");
+		printf("OS/ABI:\t\t\t\t   UNIX - Solaris\n");
 		break;
 	case 0x07:
 		printf("OS/ABI:\t\t\t\t   AIX\n");
@@ -43,7 +43,7 @@ int print_0S_ABI(uint8_t value)
 		printf("OS/ABI:\t\t\t\t   TRU64\n");
 		break;
 	default:
-		printf("OS/ABI:\t\t\t\t   Unknown\n");
+		printf("OS/ABI:\t\t\t\t   <unknown %d>\n", value);
 		break;
 	}
 	return (0);
@@ -61,7 +61,7 @@ int print_elf_type(uint16_t value)
 	select_from[0] = "NONE (non file)";
 	select_from[1] = "REL (relocatable file";
 	select_from[2] = "EXEC (Executable file)";
-	select_from[3] = "DYN (shared object)";
+	select_from[3] = "DYN (Shared object file)";
 	select_from[4] = "CORE (core file)";
 	printf("Type:                              %s\n", select_from[value]);
 	return (0);
@@ -92,10 +92,10 @@ int print_data(uint8_t value)
 	printf("Data:");
 	if (value == 1)
 	{
-		printf("%*s", 44, "little endian\n");
+		printf("%*s", 60, "2's complement, little endian\n");
 	}
 	else
-		printf("%*s", 44, "big endian\n");
+		printf("%*s", 60, "2's complement, big endian\n");
 	return (0);
 }
 
