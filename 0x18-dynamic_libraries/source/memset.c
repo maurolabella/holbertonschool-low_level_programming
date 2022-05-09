@@ -1,0 +1,9 @@
+#include "main.h"
+
+
+/**
+ * @brief 
+ * 
+ */
+char *_memset(char *s, char b, unsigned int n)
+{}
