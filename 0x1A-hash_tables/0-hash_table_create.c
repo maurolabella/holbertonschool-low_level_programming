@@ -18,10 +18,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 		if (!new_table)
 			return (NULL);
 
-		/* charge values */
-		new_table->size = size;
-		new_table->array = NULL;
-
 		new_table->array = malloc(sizeof(hash_node_t *) * size);
 
 		if (!new_table->array)
@@ -29,9 +25,14 @@ hash_table_t *hash_table_create(unsigned long int size)
 			free(new_table);
 			return (NULL);
 		}
+
+		/* charge values */
+		new_table->size = size;
+
 		/* initialize node pointers to NULL */
 		for (i = 0; i < size; i++)
 			new_table->array[i] = NULL;
+		return (new_table);
 	}
-	return (new_table);
+	return (NULL);
 }
