@@ -2,14 +2,16 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables'
  
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/1-djb2.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c
+ 
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-hash_table_delete.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/4-hash_table_get.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/4-hash_table_get.c
- 
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/3-hash_table_set.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/3-hash_table_set.c
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-main.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-main.c
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/0-hash_table_create.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/0-hash_table_create.c
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/2-key_index.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/2-key_index.c
+ 
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/5-hash_table_print.o -c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c
+ 
 gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o g /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/1-djb2.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-hash_table_delete.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/4-hash_table_get.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/3-hash_table_set.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-main.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/0-hash_table_create.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/2-key_index.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/5-hash_table_print.o 
 make: Leaving directory '/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables'
  
