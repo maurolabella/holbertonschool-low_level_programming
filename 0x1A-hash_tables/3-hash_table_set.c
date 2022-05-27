@@ -26,7 +26,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 /**
  * add_table_node - update node in linked list related to hash table
  *
- * @head:
+ * @head:linked list head associated to a position (array position)
+ *  in hash table
  * @key: new node's key (or the key refering to updating material)
  * @value: new node's value (or updating one)
  * Return: hash_node_t*
