@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 26 20:08:58 2022
+# Make data base, printed on Thu May 26 22:19:52 2022
 
 # Variables
 
@@ -36,6 +36,8 @@ XDG_SESSION_TYPE = x11
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -53,11 +55,9 @@ RM = rm
 # environment
 SNAP_DATA = /var/snap/code/97
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:50185
+JOURNAL_STREAM = 8:44629
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -69,7 +69,7 @@ MAKEFILE_LIST :=  Makefile 1-djb2.d 6-hash_table_delete.d 4-hash_table_get.d 3-h
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 USERNAME = mauro
 # makefile (from 'Makefile', line 7)
@@ -82,28 +82,30 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/97/usr/share/code/code
 # makefile (from 'Makefile', line 25)
 DEL = del
 # environment
-MANAGERPID = 1568
+MANAGERPID = 1521
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = en_US.UTF-8
 # environment
-VSCODE_CWD = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables
+VSCODE_CWD = /home/mauro
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/mauro/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/mauro/.local/bin:/home/mauro/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # makefile (from 'Makefile', line 20)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
-SESSION_MANAGER = local/mauro-SVT21217CXB:@/tmp/.ICE-unix/1791,unix/mauro-SVT21217CXB:/tmp/.ICE-unix/1791
+SESSION_MANAGER = local/mauro-SVT21217CXB:@/tmp/.ICE-unix/1742,unix/mauro-SVT21217CXB:/tmp/.ICE-unix/1742
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -121,7 +123,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 42982b1bf75b4e0aa53fba863e30bd89
+INVOCATION_ID = 229cd991ab87415e9f62c7ebdf565ef5
 # makefile (from 'Makefile', line 8)
 LDFLAGS = 
 # environment
@@ -129,17 +131,19 @@ GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# makefile (from 'Makefile', line 13)
-SRCDIR = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3627
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
+# makefile (from 'Makefile', line 13)
+SRCDIR = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -149,7 +153,7 @@ PWD = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1754
+SSH_AGENT_PID = 1705
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -167,7 +171,7 @@ VSCODE_CODE_CACHE_PATH = /home/mauro/.config/Code/CachedData/c3511e6c69bb39013c4
 # environment
 LOGNAME = mauro
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # makefile (from 'Makefile', line 23)
 DELOBJ = $(OBJ)
 # environment
@@ -190,8 +194,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 LC_TIME = en_US.UTF-8
 # environment
 SNAP_REAL_HOME = /home/mauro
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -201,13 +203,13 @@ QT_IM_MODULE = ibus
 # environment
 SNAP_USER_DATA = /home/mauro/snap/code/97
 # environment
-SHLVL = 1
+SHLVL = 0
 # makefile (from 'Makefile', line 6)
 CC = gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-daed42f9-4493-4f3d-9816-acb2f50f4835.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-73b4dd10-6e22-41d7-bb5f-c870e78a0f48.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -226,14 +228,14 @@ XDG_CURRENT_DESKTOP = Unity
 LC_TELEPHONE = en_US.UTF-8
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-ab612523-1.67.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'Makefile', line 12)
 EXT = .c
 # makefile
@@ -251,8 +253,11 @@ LC_PAPER = en_US.UTF-8
 # makefile (from 'Makefile', line 11)
 APPNAME = g
 # environment
+LC_IDENTIFICATION = en_US.UTF-8
+# environment
 QT_ACCESSIBILITY = 1
 # default
+ 
 MAKEFILES := 
 # environment
 SNAP_COOKIE = rkXmz5YR28qQotmbwSciFKnUFNKG4qXupHRMDpmB46AQS-Yz3-nS
@@ -271,11 +276,9 @@ LC_ALL = C
 # makefile (from 'Makefile', line 27)
 WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3cc719f6_a910_4b56_8ddd_6c5033696879
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.168
 # default
 SUFFIXES := 
 # environment
@@ -287,7 +290,7 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-LC_IDENTIFICATION = en_US.UTF-8
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # makefile (from 'Makefile', line 26)
@@ -297,12 +300,9 @@ LC_ADDRESS = en_US.UTF-8
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
- 
-VSCODE_PID = 13742
+VSCODE_PID = 3674
 # variable set hash-table stats:
-# Load=145/1024=14%, Rehash=0, Collisions=23/216=11%
+# Load=145/1024=14%, Rehash=0, Collisions=41/211=19%
 
 # Pattern-specific Variable Values
 
@@ -310,10 +310,10 @@ VSCODE_PID = 13742
 
 # Directories
 
-# . (device 2050, inode 14025911): 22 files, no impossibilities.
+# . (device 2050, inode 14025911): 32 files, no impossibilities.
 # /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src (device 2050, inode 15075939): 11 files, no impossibilities.
 
-# 33 files, no impossibilities in 2 directories.
+# 43 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -338,11 +338,9 @@ VSCODE_PID = 13742
 
 g: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/1-djb2.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-hash_table_delete.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/4-hash_table_get.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/3-hash_table_set.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-main.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/0-hash_table_create.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/2-key_index.o /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/5-hash_table_print.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-05-26 20:09:02.487125872
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 41):
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
@@ -351,9 +349,7 @@ all: g
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  Successfully updated.
 
 # Not a target:
 /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c:
@@ -370,7 +366,7 @@ all: g
 3-hash_table_set.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/3-hash_table_set.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '3-hash_table_set'
-#  Last modified 2022-05-26 20:08:57.995050871
+#  Last modified 2022-05-26 22:19:51.472740464
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -400,7 +396,7 @@ all: g
 2-key_index.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/2-key_index.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '2-key_index'
-#  Last modified 2022-05-26 20:08:57.951050136
+#  Last modified 2022-05-26 22:19:51.284741636
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -409,7 +405,7 @@ all: g
 0-hash_table_create.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/0-hash_table_create.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '0-hash_table_create'
-#  Last modified 2022-05-26 20:08:57.963050336
+#  Last modified 2022-05-26 22:19:51.348741237
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -432,7 +428,7 @@ Makefile:
 1-djb2.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '1-djb2'
-#  Last modified 2022-05-26 20:08:58.039051605
+#  Last modified 2022-05-26 22:19:51.720738917
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -448,7 +444,7 @@ Makefile:
 6-hash_table_delete.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '6-hash_table_delete'
-#  Last modified 2022-05-26 20:08:58.023051337
+#  Last modified 2022-05-26 22:19:51.652739341
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -461,10 +457,14 @@ Makefile:
 #  File has been updated.
 #  Successfully updated.
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/0-hash_table_create.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/0-hash_table_create.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/0-hash_table_create.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/0-hash_table_create.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/0-hash_table_create.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '0-hash_table_create'
+#  Last modified 2022-05-26 20:09:02.359123735
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 cleanw:
 #  Phony target (prerequisite of .PHONY).
@@ -477,21 +477,25 @@ cleanw:
 5-hash_table_print.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '5-hash_table_print'
-#  Last modified 2022-05-26 20:08:57.931049803
+#  Last modified 2022-05-26 22:19:51.140742534
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-hash_table_delete.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-hash_table_delete.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-hash_table_delete.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '6-hash_table_delete'
+#  Last modified 2022-05-26 20:09:02.187120862
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 6-main.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-main.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '6-main'
-#  Last modified 2022-05-26 20:08:57.979050603
+#  Last modified 2022-05-26 22:19:51.404740888
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
@@ -499,39 +503,23 @@ cleanw:
 
 /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/1-djb2.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
 #  Implicit rule search has been done.
- 
 #  Implicit/static pattern stem: '1-djb2'
-#  Last modified 2022-05-26 19:22:26.870184819
+#  Last modified 2022-05-26 20:09:02.147120194
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/1-djb2.o
-# automatic
-# % := 
-# automatic
-# * := 1-djb2
-# automatic
-# + := /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-# automatic
-# | := 
-# automatic
-# < := /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c
-# automatic
-# ^ := /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/1-djb2.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-# automatic
-# ? := /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 52):
 	$(CC) $(CXXFLAGS) -o $@ -c $<
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/2-key_index.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/2-key_index.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/2-key_index.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/2-key_index.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/2-key_index.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '2-key_index'
+#  Last modified 2022-05-26 20:09:02.403124469
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 # makefile (from 'Makefile', line 35)
- 
 release: CXXFLAGS = -Wall -02 -DNDEBUG
 release: clean g
 #  Implicit rule search has not been done.
@@ -543,13 +531,18 @@ release: clean g
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-main.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-main.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/6-main.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-main.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/6-main.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '6-main'
+#  Last modified 2022-05-26 20:09:02.315123
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 cleandep:
 #  Phony target (prerequisite of .PHONY).
@@ -567,10 +560,14 @@ cleandepw:
 #  recipe to execute (from 'Makefile', line 74):
 	$(DEL) $(DEP)
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/3-hash_table_set.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/3-hash_table_set.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/3-hash_table_set.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/3-hash_table_set.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/3-hash_table_set.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '3-hash_table_set'
+#  Last modified 2022-05-26 20:09:02.275122332
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 clean:
 #  Phony target (prerequisite of .PHONY).
@@ -583,32 +580,39 @@ clean:
 # Not a target:
 /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-05-26 19:42:46.235665796
 #  File has been updated.
 #  Successfully updated.
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/4-hash_table_get.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/4-hash_table_get.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/4-hash_table_get.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/4-hash_table_get.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/4-hash_table_get.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '4-hash_table_get'
+#  Last modified 2022-05-26 20:09:02.231121597
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 4-hash_table_get.d: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/4-hash_table_get.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '4-hash_table_get'
-#  Last modified 2022-05-26 20:08:58.011051137
+#  Last modified 2022-05-26 22:19:51.60473964
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 45):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
-/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/5-hash_table_print.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/obj/5-hash_table_print.o: /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/5-hash_table_print.c /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x1A-hash_tables/src/hash_tables.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '5-hash_table_print'
+#  Last modified 2022-05-26 20:09:02.451125271
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 # files hash-table stats:
-# Load=36/1024=4%, Rehash=0, Collisions=6/131=5%
+# Load=36/1024=4%, Rehash=0, Collisions=6/145=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -617,11 +621,10 @@ clean:
 
 # strcache buffers: 1 (0) / strings = 72 / storage = 2720 B / avg = 37 B
 # current buf: size = 8162 B / used = 2720 B / count = 72 / avg = 37 B
- 
 
-# strcache performance: lookups = 163 / hit rate = 55%
+# strcache performance: lookups = 194 / hit rate = 62%
 # hash-table stats:
-# Load=72/8192=1%, Rehash=0, Collisions=4/163=2%
-# Finished Make data base on Thu May 26 20:08:58 2022
+# Load=72/8192=1%, Rehash=0, Collisions=4/194=2%
+# Finished Make data base on Thu May 26 22:19:52 2022
 
  
