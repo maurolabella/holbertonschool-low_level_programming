@@ -7,7 +7,7 @@
 		"name": "(gdb) Launch 0x1A ",
 		"type": "cppdbg",
 		"request": "launch",
-		"program": "${workspaceFolder}/f",
+		"program": "${workspaceFolder}/sht",
 		"args": [],
 		"stopAtEntry": false,
 		"cwd": "${workspaceFolder}",
