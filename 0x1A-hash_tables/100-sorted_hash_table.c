@@ -40,25 +40,6 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * s_key_index - gives you the index of a key
- *
- * @key: the key
- * @size: size of the array of the hash table
- * Return: unsigned long int
- */
-unsigned long int s_key_index(const unsigned char *key, unsigned long int size)
-{
-	unsigned long int hash = 0, c, i;
-
-	for (i = 0; key[i] != '\0'; i++)
-	{
-		c = (unsigned char)key[i];
-		hash = (hash << 3) + (hash >> (sizeof(hash) * CHAR_BIT - 3)) + c;
-	}
-	return (hash % size);
-}
-
-/**
  * shash_table_set - sets new items in the table
  *
  * @ht: the thable
@@ -68,7 +49,7 @@ unsigned long int s_key_index(const unsigned char *key, unsigned long int size)
  */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = s_key_index((const unsigned char *)key, ht->size);
+	unsigned long int index = key_index((const unsigned char *)key, ht->size);
 	shash_node_t *curr_bucket = NULL, *curr_ord = NULL, *new = NULL;
 
 	if (ht && value && key)
@@ -223,7 +204,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 	if (ht && key)
 	{
-		index = s_key_index((const unsigned char *)key, ht->size);
+		index = key_index((const unsigned char *)key, ht->size);
 		current = ht->array[index];
 		if (!current)
 			return (NULL);

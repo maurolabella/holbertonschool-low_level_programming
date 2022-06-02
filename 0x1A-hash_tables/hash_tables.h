@@ -46,8 +46,6 @@ typedef struct shash_table_s
 
 /** 100-sorted_hash_table.c */
 shash_table_t *shash_table_create(unsigned long int size);
-unsigned long int s_key_index(const unsigned char *key,
-															unsigned long int size);
 int shash_table_set(shash_table_t *ht, const char *key, const char *value);
 int coincident_key(shash_node_t **curr_bucket, const char *key,
 									 const char *value);

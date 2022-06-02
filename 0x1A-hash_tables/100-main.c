@@ -12,7 +12,7 @@ int main(void)
 {
 	shash_table_t *ht;
 
-	ht = shash_table_create(5);
+	ht = shash_table_create(1);
 	shash_table_set(ht, "ab", "0");
 	shash_table_print(ht);
 	shash_table_set(ht, "abc", "1");
