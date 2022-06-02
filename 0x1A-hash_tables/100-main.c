@@ -17,6 +17,10 @@ int main(void)
 	shash_table_print(ht);
 	shash_table_set(ht, "abc", "1");
 	shash_table_print(ht);
+	shash_table_set(ht, "abcd", "1");
+	shash_table_print(ht);
+	shash_table_set(ht, "abcde", "1");
+	shash_table_print(ht);
 	shash_table_set(ht, "y", "0");
 	shash_table_print(ht);
 	shash_table_set(ht, "j", "1");

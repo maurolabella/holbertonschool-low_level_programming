@@ -52,7 +52,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = key_index((const unsigned char *)key, ht->size);
 	shash_node_t *curr_bucket = NULL, *curr_ord = NULL, *new = NULL;
 
-	if (ht && value && key)
+	if (ht && key)
 	{
 		curr_bucket = ht->array[index];
 		if (curr_bucket)
