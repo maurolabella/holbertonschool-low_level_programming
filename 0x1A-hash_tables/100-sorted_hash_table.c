@@ -42,7 +42,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 /**
  * shash_table_set - sets new items in the table
  *
- * @ht: the thable
+ * @ht: the table
  * @key: the key as item identifier
  * @value: value as item property
  * Return: integer 1 if succeeded, 0 otherwise.
@@ -279,16 +279,18 @@ void shash_table_print_rev(const shash_table_t *ht)
 void shash_table_delete(shash_table_t *ht)
 {
 	shash_node_t *current = NULL, *tmp = NULL;
-
-	current = ht->stail;
-	while (current)
+	if (ht)
 	{
-		tmp = current;
-		current = current->sprev;
-		free(tmp->key);
-		free(tmp->value);
-		free(tmp);
+		current = ht->stail;
+		while (current)
+		{
+			tmp = current;
+			current = current->sprev;
+			free(tmp->key);
+			free(tmp->value);
+			free(tmp);
+		}
+		free(ht->array);
+		free(ht);
 	}
-	free(ht->array);
-	free(ht);
 }
