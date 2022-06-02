@@ -25,7 +25,10 @@ int main(void)
 	shash_table_print(ht);
 	shash_table_set(ht, "j", "1");
 	shash_table_print(ht);
+	shash_table_set(ht, "jk", "");
+	shash_table_print(ht);
 	printf("%s\n", shash_table_get(ht, "abc"));
+	printf("%s\n", shash_table_get(ht, "jk"));
 	shash_table_set(ht, "c", "2");
 	shash_table_print(ht);
 	shash_table_set(ht, "b", "3");
