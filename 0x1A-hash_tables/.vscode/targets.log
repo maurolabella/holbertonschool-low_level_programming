@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 30 21:31:54 2022
+# Make data base, printed on Wed Jun  1 22:24:00 2022
 
 # Variables
 
@@ -57,7 +57,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:47130
+JOURNAL_STREAM = 8:47083
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -85,7 +85,7 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 25)
 DEL = del
 # environment
-MANAGERPID = 1536
+MANAGERPID = 1544
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -103,7 +103,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # makefile (from 'Makefile', line 20)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
-SESSION_MANAGER = local/mauro-SVT21217CXB:@/tmp/.ICE-unix/1754,unix/mauro-SVT21217CXB:/tmp/.ICE-unix/1754
+SESSION_MANAGER = local/mauro-SVT21217CXB:@/tmp/.ICE-unix/1761,unix/mauro-SVT21217CXB:/tmp/.ICE-unix/1761
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -121,7 +121,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = eb43d32130dc45ee96c5756e488664fa
+INVOCATION_ID = 139dca1ca0ea4182970d1b761c127e80
 # makefile (from 'Makefile', line 8)
 LDFLAGS = 
 # environment
@@ -149,7 +149,7 @@ PWD = /home/mauro/Programming/Holberton/holbertonschool-low_level_programming/0x
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1717
+SSH_AGENT_PID = 1721
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -207,7 +207,7 @@ CC = gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-700438eb-09d5-4112-add9-5f4a08824545.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6a936e9d-d253-46bd-bba9-2376b66de1f5.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -271,11 +271,11 @@ LC_ALL = C
 # makefile (from 'Makefile', line 27)
 WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/9fa5ed6d_4a9c_42c9_bf6c_eaec146b3443
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/48cef20b_f82a_4d53_914d_e0caef2489c8
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.156
+GNOME_TERMINAL_SERVICE = :1.3045
 # default
 SUFFIXES := 
 # environment
@@ -291,7 +291,6 @@ LC_IDENTIFICATION = en_US.UTF-8
 # default
 .RECIPEPREFIX := 
 # makefile (from 'Makefile', line 26)
- 
 EXE = .exe
 # environment
 LC_ADDRESS = en_US.UTF-8
@@ -300,13 +299,14 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 30022
+VSCODE_PID = 33296
 # variable set hash-table stats:
 # Load=145/1024=14%, Rehash=0, Collisions=23/201=11%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
@@ -444,6 +444,6 @@ clean:
 # strcache performance: lookups = 75 / hit rate = 45%
 # hash-table stats:
 # Load=41/8192=1%, Rehash=0, Collisions=2/75=3%
-# Finished Make data base on Mon May 30 21:31:54 2022
+# Finished Make data base on Wed Jun  1 22:24:00 2022
 
  
