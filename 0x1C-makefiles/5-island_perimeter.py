@@ -12,7 +12,7 @@ def island_perimeter(grid):
                 if y > 0:
                     if grid[y - 1][x] == 1:
                         perim -= 2
-                    if x > 0:
-                        if grid[y][x - 1] == 1:
-                            perim -= 2
+                if x > 0:
+                    if grid[y][x - 1] == 1:
+                        perim -= 2
     return perim
