@@ -6,4 +6,3 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 %.O: %.c 
 	$(CC) -c $< -o $@
-	
